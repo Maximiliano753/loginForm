@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="https://www.google.by/?hl=ru" id="MyForm" method="get">
+            <h1>Login</h1>
+            <div class="input-box">
+            <input type="text" placeholder="Username" required id="login">
+            <i class='bx bxs-user'></i>
+        </div>
+            
+            <div class="input-box" id="password">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bx-lock'></i>
+        </div>
+        <div class="remember">
+            <label for=""><input type="checkbox">Remember me</label>
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="button" onclick="log(event)"><span>Send</span></button>
+
+        <div class="register-link">
+            <p>Don't have an account?<a href="#">Register</a></p>
+        </div>
+        </form>
+    </div>
+    <div class="notification" id="notification" style="display: none;">Данные успешно отправлены!</div>
+    <script src="index.js"></script>
+
+</body>
+</html>
